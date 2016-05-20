@@ -17,7 +17,7 @@ class Mage_Jostpay_StandardController extends Mage_Core_Controller_Front_Action
 	
 	public function updateTransaction($transaction_reference,$update_data){
 		$write = Mage::getSingleton('core/resource')->getConnection('core_write');
-		$write->update('mage_jostpay',$transaction,"transaction_reference='$transaction_reference'");
+		$write->update('mage_jostpay',$update_data,"transaction_reference='$transaction_reference'");
 		return true;
 	}
 	

@@ -74,18 +74,7 @@ class Mage_Jostpay_Model_Standard extends Mage_Payment_Model_Method_Abstract
      */
     public function getJostpayUrl ()
     {
-        switch ($this->getConfig()->getMode()) {
-            case Mage_Jostpay_Model_Config::MODE_LIVE:
-                $url = 'https://webpay.jostpayng.com/paydirect/webpay/pay.aspx';
-                break;
-            case Mage_Jostpay_Model_Config::MODE_TEST:
-                $url = 'https://stageserv.jostpayng.com/test_paydirect/pay';
-                break;
-            default: // simulator mode
-                $url = 'https://webpay.jostpayng.com/paydirect/webpay/pay.aspx';
-                break;
-        }
-        return $url;
+        return 'https://jostpay.com/sci';
     }
 
     /**

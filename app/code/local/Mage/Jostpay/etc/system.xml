@@ -4,7 +4,7 @@
         <payment>
             <groups>
                 <jostpay_standard translate="label" module="jostpay">
-                    <label>Jostpay Form</label>
+                    <label>Jostpay Payment</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>601</sort_order>
                     <show_in_default>1</show_in_default>
