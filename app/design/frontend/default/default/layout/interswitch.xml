@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+<!--
+Jostpay History Response Review
+-->
+<jostpay_standard_history>
+    <reference name="root">
+        <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+    </reference>
+    <reference name="content">
+        <block type="jostpay/standard_history" name="jostpay_standard_history" template="jostpay/standard/history.phtml">
+        </block>
+    </reference>
+</jostpay_standard_history>
+
+</layout>
